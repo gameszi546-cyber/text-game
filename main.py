@@ -43,8 +43,8 @@ def location_1():
         location_1_Description = True
     
     print ("")
-    print ("<Выбор(2)> Подняться по винтовой лестнице.")
-    print ("<Выбор(1)> Зайти в кабинет профессора.")
+    print ("<Выбор(1)> Подняться по винтовой лестнице.")
+    print ("<Выбор(2)> Зайти в кабинет профессора.")
 
     print ("")
     location_position = input ("<Ведите 1 или 2 для выбора действия> : ")
@@ -136,10 +136,10 @@ def location_3():
             input ("<Нажмите> 'Enter'")
             location_3()
         elif key == True:
-            note = True
             print ("")
             print ("«Сейф открыт»")
             if note == False:
+                note = True
                 print ("")
                 print ("Внутри лежит записка с кодом запуска генератора")
                 input ("<Нажмите> 'Enter'")
