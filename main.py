@@ -125,12 +125,12 @@ def location_3():
 # до выхода
 def before_release():
 
-    global note, key, end, location_1_Description, location_2_Description, location_3_Description, location_position
+    global note, key, location_1_Description, location_2_Description, location_3_Description, location_position
 
     print ("Чтобы выйти, введите 1, а чтобы начать снова, введите 2.")
-
-    exit = input ()
-    if exit == "2":
+    end = 0
+    end = input ()
+    if end == "2":
         note = False
         key = False
         location_1_Description = False
@@ -139,8 +139,8 @@ def before_release():
         location_position = 0
         location_1()
 
-    elif exit == "1":
-         exit
+    elif end == "1":
+         exit()
 
     else:
         print ("Неверный выбор. Пожалуйста, выберите 1 или 2.")
